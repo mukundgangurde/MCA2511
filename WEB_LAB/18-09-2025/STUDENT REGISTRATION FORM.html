@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <center><h1>STUDENT REGISTRATION FORM</h1></center>
+        <table border="1px" align="center">
+            
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fname" required maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email" maxlength="20" placeholder="example@mail.com"></td>
+            </tr>
+            <tr>
+                <td>Mobile No</td>
+                <td><input type="number" name="number" maxlength="10" placeholder="48564341567"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Male
+                    <input type="radio" name="gender" Value="Male">
+                    Female <input type="radio" name="gender" Value="Female">
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="Address" rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <input type="checkbox" name="Drawing" value="Drawing">Drawing
+                    <br>
+                    <input type="checkbox" name="Singing" value="Singing">Singing
+                    <br>
+                    <input type="checkbox" name="Travelling" value="Travelling">Travelling
+                    <br>
+                    Others <input type="text" name="other_hobby" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td>Qualifiction</td>
+                <td>
+                    <select name="qualification" id="">
+                        <option value="Select">Select</option>
+                        <option value="BCA">BCA</option>
+                        <option value="B. Sc. IT">B. Sc. IT</option>
+                        <option value="B. tech">B. tech</option>
+                        <option value="BE">BE</option>
+                        <option value="BVOC">BVOC</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
