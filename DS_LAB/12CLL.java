@@ -47,6 +47,53 @@ class CList
 	}
 
 	//Delete
+	public void Delete(int x)
+	{
+		//1. Search for x
+		CNode tmp = head;
+		CNode prev = null;
+		boolean flag = false;
+
+		do
+		{
+			if(tmp.data == x)
+			{
+				flag = true;
+				break;
+			}
+			prev = tmp;
+			tmp = tmp.next;
+		}
+		while (tmp!=head);
+
+		//2. x is not found
+		if(flag == false)
+		{
+			System.out.println(x + " is not found");
+			return;
+		}
+
+		//3. x is found
+		if(tmp == head && tmp == tail)	//3a. Single Node Deletion
+		{
+			head = null;
+			tail = null;
+		}
+		else if	(tmp==head)		//3b. Head Node Deletion
+		{
+			head = tmp.next;
+			tail.next = head;
+		}
+		else if (tmp==tail)		//3c. Tail Node Deletion
+		{
+			tail = prev;
+			tail.next = head;
+		}
+		else				//3d. Any other node
+		{
+			prev.next = tmp.next;
+		}
+	}
 
 	//Search
 	public void Search(int x)
@@ -110,7 +157,7 @@ class CList
 			System.out.print(tmp.data + " -> ");
 			tmp = tmp.next;
 		} while (tmp!=head);
-			System.out.print("Back to head");
+			System.out.print("Back to head\n");
 	}
 
 }//end of CList
@@ -144,10 +191,15 @@ class CLL
 					System.out.print("Enter a Value: ");
 					int x = sc.nextInt();
 					c.Insert(x);
+					c.Display();
 				break;
 
 				case 2:
-					
+					c.Display();
+					System.out.print("Enter a Value: ");
+					x = sc.nextInt();
+					c.Delete(x);
+					c.Display();
 				break;
 
 				case 3:
