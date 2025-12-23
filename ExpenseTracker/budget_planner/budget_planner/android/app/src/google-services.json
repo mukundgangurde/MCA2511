@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366792407866",
+    "project_id": "budget-planner-56924",
+    "storage_bucket": "budget-planner-56924.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366792407866:android:c5ed119597fa081a35ae03",
+        "android_client_info": {
+          "package_name": "com.example.budget_planner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDea_5kgHYh4WegJ9V1hCToIt1o5QDpt5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
